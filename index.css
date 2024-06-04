@@ -1,0 +1,18 @@
+/* Creating layout via flex // */
+.parent {
+  width: 1170px;
+  margin: 0 auto;
+}
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.child {
+  width: 275px;
+  min-height: 300px;
+  background: aqua;
+  margin-bottom: 23px;
+}
+.child:not(:nth-child(4n)) {
+  margin-right: 23px;
+}
