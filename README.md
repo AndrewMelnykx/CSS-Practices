@@ -8,3 +8,4 @@
 
 *Enhance tight cooperation with CSS animations
 
+*Adaptive layout as a must
