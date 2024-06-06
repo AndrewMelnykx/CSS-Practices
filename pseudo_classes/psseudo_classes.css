@@ -1,0 +1,33 @@
+/* Set the background-color to red, of any <p> element that are the first child of any element. */
+
+p:first-child {
+  background-color: red;
+}
+/* Target the last child */
+p:last-child {
+  background-color: blue;
+}
+
+/* Target every even child */
+p:nth-child(even) {
+  background-color: yellow;
+}
+
+/* Target every odd child */
+p:nth-child(odd) {
+  background-color: green;
+}
+
+/* Target the second child */
+p:nth-child(2) {
+  background-color: pink;
+}
+
+/* Target the third child of its type */
+p:nth-last-of-type(2) {
+  background-color: purple;
+}
+/* Set background color to red to any input in focus */
+input:focus {
+  background-color: red;
+}
