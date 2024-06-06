@@ -1,0 +1,49 @@
+/* Change only first line of p color to red */
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+
+/* Change first letter */
+
+p::first-letter {
+  color: red;
+  font-variant: small-caps;
+}
+/* We can use pseudo elements with classes */
+p.firstElement::first-letter {
+  color: #ff0000;
+  font-size: large;
+}
+
+/* Different first letter and following words will be blue */
+p::first-letter {
+  color: yellow;
+  font-size: large;
+}
+p::first-line {
+  color: blue;
+  font-variant: small-caps;
+}
+
+/* Use before to set anything before the main html element */
+.p::before {
+  content: url(smiley.gif);
+}
+/* 
+After is the same but inly after */
+p::after {
+  content: url(smiley.gif);
+}
+
+/* Change the color of ul/ol elemnts like 1.2.3. or ... */
+::marker {
+  color: greenyellow;
+  font-size: 20px;
+}
+
+/* IF user select anything in page  */
+::selection {
+  background-color: white;
+  color: black;
+}
