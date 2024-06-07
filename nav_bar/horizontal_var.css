@@ -1,0 +1,49 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+/* Another way to make a linear text from block by default li element  */
+
+/* li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+} */
+
+/* AND IF YOU NEED LAST A TO BE AT THE VERY END OF THE BAR */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  /* and here top/bottom:0 to stay on the fixed after scorlling */
+}
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+  padding: 14px 16px;
+}
+
+li {
+  float: left;
+}
+
+/* AND SPLIT WITH BORDER EVERY NAV LINK  */
+li {
+  border-right: 1px solid black;
+}
+li:last-child {
+  border: none;
+}

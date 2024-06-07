@@ -1,0 +1,14 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  background-color: aqua;
+  cursor: pointer;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: violet;
+  font-size: large;
+}
