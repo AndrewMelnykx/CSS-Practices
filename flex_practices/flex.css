@@ -1,0 +1,36 @@
+.child {
+  max-width: 250px;
+  padding: 20px;
+  background: wheat;
+  border-radius: 10px;
+}
+.flex {
+  display: flex;
+  flex-wrap: no-wrap;
+}
+.parent {
+  gap: 30px;
+}
+.flex-v-center {
+  align-items: center;
+  display: flex;
+  flex-wrap: no-wrap;
+}
+.card {
+  width: 100%;
+  max-width: 300px;
+  background-color: aqua;
+}
+img {
+  max-width: 100%;
+}
+.flex-all-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.flex-vertical-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
