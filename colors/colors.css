@@ -1,0 +1,38 @@
+#p1 {
+  background-color: rgba(255, 0, 0, 0.3);
+} /*red*/
+
+#p1 {
+  background-color: hsl(120, 100%, 50%);
+} /*green*/
+
+#p1 {
+  background-color: hsla(120, 100%, 75%, 0.3%);
+} /*green with opacity */
+
+#p1 {
+  background-color: rgb(255, 0, 0);
+  opacity: 0.6;
+} /*red color with opacity 0.6*/
+
+div {
+  color: black;
+  border: 10px solid currentColor;
+  padding: 15px;
+}
+
+body {
+  background-image: url("paper.gif");
+}
+
+div {
+  background-color: transparent;
+}
+
+div {
+  border: 2px solid red;
+}
+
+span {
+  border: inherit;
+}
