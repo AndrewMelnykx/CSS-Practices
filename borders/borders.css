@@ -1,0 +1,72 @@
+#corners1 {
+  background-color: yellowgreen;
+  border-radius: 50px/15px;
+  width: 250px;
+  height: 150px;
+}
+#corner51 {
+  background-color: aqua;
+  border-radius: 15px/50px;
+  width: 250px;
+  height: 150px;
+}
+/* And eclipse from it  */
+#corners3 {
+  background-color: aqua;
+  border-radius: 50%;
+  width: 250px;
+  height: 150px;
+}
+
+#borderImg {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(borders.css) 30 stretch;
+}
+
+#borderimg1 {
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 50 round;
+}
+
+.div1 {
+  border: 1px solid black;
+  height: 120px;
+  width: 150px;
+  background: url(img_flwr.gif);
+  background-repeat: no-repeat;
+
+  /* fits the best size */
+
+  background-size: contain;
+}
+
+.div2 {
+  border: 1px solid black;
+  height: 120px;
+  width: 150px;
+  background: url(img_flwr.gif);
+  background-repeat: no-repeat;
+
+  /* Tries to fits maxim  to borders */
+
+  background-size: cover;
+}
+
+.div3 {
+  /* no fits at all */
+
+  border: 1px solid black;
+  height: 120px;
+  width: 150px;
+  background: url(img_flwr.gif);
+  background-repeat: no-repeat;
+}
+
+#example1 {
+  background: url(img.dwq.gif) left top no-repeat,
+    url(fnnwe.gif) right bottom no-repeat, url(kefkw.gif) left top repeat;
+  padding: 15px;
+  background-size: 50px 130px auto;
+}
