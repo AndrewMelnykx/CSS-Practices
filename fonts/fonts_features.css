@@ -1,0 +1,47 @@
+p.test1 {
+  white-space: nowrap;
+  width: 200px;
+  border: 1px solid #0000;
+  overflow: hidden;
+  text-overflow: clip;
+}
+p.test2 {
+  white-space: nowrap;
+  width: 200px;
+  border: 1px solid #0000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* we can show more text on hover */
+div.test:hover {
+  overflow: visible;
+}
+
+/* to make divs with text that expand via lines and limited by parent element */
+
+p.test {
+  width: 11em;
+  border: 1px solid #000000;
+  word-wrap: break-word;
+}
+
+/* Break in any word use */
+
+p.test {
+  width: 11em;
+  border: 1px solid #000000;
+  word-break: break-all;
+}
+/* Here we can set text vertically/horizontally */
+p.test1 {
+  writing-mode: horizontal-tb;
+}
+
+span.test2 {
+  writing-mode: vertical-rl;
+}
+
+p.test2 {
+  writing-mode: vertical-rl;
+}

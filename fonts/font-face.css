@@ -1,0 +1,13 @@
+@font-face {
+  font-family: notFirstFont;
+  src: url(sansation_light.woff);
+}
+/* IF need bold version of the text we add another font face */
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_bold.woff);
+  font-weight: bold;
+}
+div {
+  font-family: notFirstFont;
+}
