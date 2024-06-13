@@ -1,0 +1,137 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+@keyframes example {
+  from {
+    background-color: aqua;
+  }
+  to {
+    background-color: black;
+  }
+}
+/* With percentage of complition */
+@keyframes example {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+/* Chnage div`s postion due the time  */
+@keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+/* 
+and we sure can add animation delay  */
+div {
+  animation-delay: 2s;
+}
+
+/* and negative , its just starts from the half of planned time */
+div {
+  animation-duration: 5s;
+  animation-delay: -2s;
+}
+/* Simple count of repeating */
+div {
+  animation-iteration-count: 4; /*or infinite*/
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-direction: reverse;
+}
+
+/* forward and backwards */
+div {
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+#div1 {
+  animation-timing-function: linear;
+}
+#div2 {
+  animation-timing-function: ease;
+}
+#div3 {
+  animation-timing-function: ease-in;
+}
+#div4 {
+  animation-timing-function: ease-out;
+}
+#div5 {
+  animation-timing-function: ease-in-out;
+}
+/* to make div stay in the new postion after animation finish */
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 200px;
+    background-color: blue;
+  }
+}
