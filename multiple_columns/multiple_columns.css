@@ -1,0 +1,27 @@
+/* column-count
+column-gap
+column-rule-style
+column-rule-width
+column-rule-color
+column-rule
+column-span
+column-width */
+
+.newspaper {
+  column-count: 3;
+  column-gap: 5px;
+}
+/* borders between */
+.newspaper {
+  column-rule-style: solid;
+  /* and thickness of the borders */
+  column-rule-width: 1px;
+  /* and color of the border */
+  column-rule-color: blue;
+  /* all in one */
+  column-rule: 1px solid lightblue;
+  /* width */
+  column-width: 100px;
+  /* The column-span property specifies how many columns an element should span across. */
+  column-span: all;
+}
