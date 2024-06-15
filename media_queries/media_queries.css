@@ -1,0 +1,50 @@
+/* A media query consists of a media type and can contain one or more media features, which resolve to either true or false. */
+
+/* <link rel="stylesheet" media="print" href="print.css">
+<link rel="stylesheet" media="screen" href="screen.css">
+<link rel="stylesheet" media="screen and (min-width: 480px)" href="example1.css">
+<link rel="stylesheet" media="screen and (min-width: 701px) and (max-width: 900px)" href="example2.css">
+etc.... */
+
+/* body {
+  background-color: pink;
+}
+@media screen and (min-width: 480px) {
+  nody {
+    background-color: lightgreen;
+  }
+} */
+
+.wrapper {
+  overflow: auto;
+}
+#main {
+  margin-left: 4px;
+}
+#leftsidebar {
+  float: none;
+  width: auto;
+}
+#manulist {
+  margin: 0;
+  padding: 0;
+}
+
+.menuitem {
+  background-color: #cdf0f6;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 4px;
+  padding: 2px;
+}
+
+@media screen and (min-width: 450px) {
+  #leftsidebar {
+    width: 200px;
+    float: left;
+  }
+  #main {
+    margin-left: 216px;
+  }
+}
