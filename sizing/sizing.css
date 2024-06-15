@@ -1,0 +1,21 @@
+div {
+  border: 2px solid;
+  padding: 20px;
+  width: 300px;
+  resize: horizontal;
+  /* resize: vertical; */
+  resize: both;
+  overflow: auto;
+}
+
+/* none resize */
+div {
+  resize: none;
+}
+
+/* Outline  */
+div {
+  border: 2px solid black;
+  outline: 5px dashed orange;
+  outline-offset: 5px;
+}
