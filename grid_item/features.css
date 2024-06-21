@@ -1,0 +1,41 @@
+/* takes 5 parts from the whole grid */
+
+.item1 {
+  grid-column: 1/5;
+}
+
+/* Same with rows */
+.item1 {
+  grid-row: 1/5;
+}
+/* All in one */
+.item8 {
+  grid-area: 1 / 2 / 5 / 6;
+}
+
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+.item5 {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main right right"
+    "menu footer footer footer footer footer";
+  gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+}
