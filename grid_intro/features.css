@@ -1,0 +1,19 @@
+.grid-container {
+  display: grid;
+  gap: 50px 100px;
+  grid-template-columns: auto auto auto;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.item {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+/* Use the grid-auto-columns property to set a default size (width) for all columns.
+
+Set the size to 50 pixels per column: default width column auto */
+
+.item {
+  grid-auto-columns: 20px; /*default width*/
+}
