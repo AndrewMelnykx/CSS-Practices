@@ -1,0 +1,36 @@
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+}
+
+#container {
+  width: $myWidth;
+}
+$myFont: Helvetica, sans-serif;
+$myColor: red;
+$myWidth: 600px;
+$myFontSize: 18px;
+
+$myColor: red;
+// We cant revalue the variable
+h1 {
+  $myColor: green;
+  color: $myColor;
+}
+
+p {
+  color: $myColor;
+}
+
+// Add global to revalue the variable
+$myColor: red;
+// We cant revalue the variable
+h1 {
+  $myColor: green !global;
+  color: $myColor;
+}
+
+p {
+  color: $myColor;
+}
