@@ -1,0 +1,15 @@
+@mixin important-text {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
+// The @include directive is used to include a mixin.
+selector {
+  @include important-text();
+}
+@mixin special-text {
+  @include important-text;
+  @include special-border;
+}
