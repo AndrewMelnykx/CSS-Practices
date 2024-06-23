@@ -1,0 +1,82 @@
+/* Has selector */
+
+ul li input:checked {
+  accent-color: black;
+}
+
+ul li:has(input:checked) {
+  accent-color: yellow;
+}
+
+/* COntainer */
+
+/* display: flex to define space available for each individual card by aligning them horizontally */
+
+.courses {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* added container-type property enabling container queries against this element */
+
+.course {
+  container-type: inline-size;
+  width: 100%;
+}
+
+.course-card {
+  display: flex;
+
+  background: #620b79;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #333333;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+@container (min-width: 400px) {
+  .course-card {
+    flex-direction: row;
+    align-items: normal;
+  }
+  .course-thumb {
+    width: 50%;
+  }
+}
+
+/* CSS Nesting */
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #f5f5f5;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.container input {
+  color: wheat;
+}
+.container button {
+  background: transparent;
+}
+
+/* Text-wrap balance */
+
+.balance-text h2 {
+  color: orange;
+  text-wrap: balance;
+}
+
+/* Focus visible pseudo class */
+
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  border-color: blue;
+  box-shadow: 0 0 3px 2px darkblue;
+}
